@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+Excercise for The Odin Project Javascript Full Stack curriculum.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Learning outcomes:
+
+- React funtional components
+- `useState()` and `useEffect()` hooks
 
 ## Available Scripts
 
