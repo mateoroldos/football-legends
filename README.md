@@ -1,3 +1,5 @@
+# Football Legends Memory Game
+
 Excercise for The Odin Project Javascript Full Stack curriculum.
 
 Learning outcomes:
