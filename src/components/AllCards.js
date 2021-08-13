@@ -6,7 +6,7 @@ import helperFunctions from '../helperFunctions';
 function AllCards() {
   const [counter, setCounter] = useState(0);
   const [bestScore, setBestScore] = useState(0);
-  const [cardsClicked, setCardsClicked] = useState(0);
+  const [round, setRound] = useState(0);
 
   const players = gameData.playersArray;
 
@@ -24,32 +24,21 @@ function AllCards() {
     setCounter(0);
   };
 
+  const nextRound = () => {
+    setRound(round + 1);
+  };
+
   const restart = () => {
-    setCardsClicked(cardsClicked + 1);
     checkBestScore();
     restartCounter();
+    nextRound();
   };
 
-  const shuffleCards = () => {
-    setCards([...helperFunctions.shuffle(cards)]);
-  };
-
-  const playerElements = () => {
-    const cards = Object.keys(players).map((key) => (
-      <Card
-        key={key}
-        player={players[key]}
-        addCounter={addCounter}
-        parentValue={cardsClicked}
-        shuffle={shuffleCards}
-        restart={restart}
-        counter={addCounter}
-      />
-    ));
-    return cards;
-  };
-
-  const [cards, setCards] = useState(playerElements());
+  const cards = helperFunctions.shuffle(
+    Object.keys(players).map((key) => (
+      <Card key={key} player={players[key]} round={round} addCounter={addCounter} restart={restart} />
+    ))
+  );
 
   return (
     <div className="App">

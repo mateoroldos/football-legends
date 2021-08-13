@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
 const Card = (props) => {
-  const [clicked, setClicked] = useState(props.parentValue);
+  const [clicked, setClicked] = useState(props.round);
 
   const clickHandler = () => {
     if (typeof clicked === 'number') {
-      setClicked('yes');
-      props.shuffle();
       props.addCounter();
+      setClicked('yes');
     } else if (clicked === 'yes') {
-      props.shuffle();
       props.restart();
-      alert('You lost');
+      alert('You Lost!');
     }
   };
 
   useEffect(() => {
-    setClicked(props.parentValue);
-  }, [props.parentValue]);
+    setClicked(props.round);
+  }, [props.round]);
 
   const imageFile = 'player_images/' + props.player.imageName + '.jpeg';
 
