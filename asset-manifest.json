@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mateoroldos/football-legends/static/css/main.4c85d998.chunk.css",
+    "main.js": "/mateoroldos/football-legends/static/js/main.49d43da7.chunk.js",
+    "main.js.map": "/mateoroldos/football-legends/static/js/main.49d43da7.chunk.js.map",
+    "runtime-main.js": "/mateoroldos/football-legends/static/js/runtime-main.e1c9ee33.js",
+    "runtime-main.js.map": "/mateoroldos/football-legends/static/js/runtime-main.e1c9ee33.js.map",
+    "static/js/2.eaec3210.chunk.js": "/mateoroldos/football-legends/static/js/2.eaec3210.chunk.js",
+    "static/js/2.eaec3210.chunk.js.map": "/mateoroldos/football-legends/static/js/2.eaec3210.chunk.js.map",
+    "static/js/3.bf9ccacf.chunk.js": "/mateoroldos/football-legends/static/js/3.bf9ccacf.chunk.js",
+    "static/js/3.bf9ccacf.chunk.js.map": "/mateoroldos/football-legends/static/js/3.bf9ccacf.chunk.js.map",
+    "index.html": "/mateoroldos/football-legends/index.html",
+    "static/css/main.4c85d998.chunk.css.map": "/mateoroldos/football-legends/static/css/main.4c85d998.chunk.css.map",
+    "static/js/2.eaec3210.chunk.js.LICENSE.txt": "/mateoroldos/football-legends/static/js/2.eaec3210.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mateoroldos/football-legends/static/media/grass.8e2c1861.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1c9ee33.js",
+    "static/js/2.eaec3210.chunk.js",
+    "static/css/main.4c85d998.chunk.css",
+    "static/js/main.49d43da7.chunk.js"
+  ]
+}
